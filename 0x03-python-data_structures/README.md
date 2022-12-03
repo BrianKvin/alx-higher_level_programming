@@ -1,1 +1,1 @@
-Solution to tasks on Python data structures
+Python - Data Structures: Lists, Tuples
