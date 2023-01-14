@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-
-
 """A class student that defines a student based on 9-student.py"""
+
+
 class Student:
     def __init__(self, first_name, last_name, age):
         self.first_name = first_name
@@ -11,7 +11,7 @@ class Student:
     def to_json(self, attrs=None):
         """Retrieves a dictionary representation of a student instance
         Args: attrs (list) - optional list of attribute name
-        if attrs is a list of strings, 
+        if attrs is a list of strings,
         represents only thise attrs included in the list
         """
         if (type(attrs) == list and all(type(ele) == str for ele in attrs)):
