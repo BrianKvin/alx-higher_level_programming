@@ -11,8 +11,10 @@ class Base:
 
     """"class constructor"""
     def __init__(self, id=None):
-        """Public instance attribute"""
-        if id =! None:
+        """Public instance attribute
+        initiate a new base"""
+        if id is not None:
             self.id = id
+        else:
             base.__nb_objects += 1
             self.id = base.__nb_objects
