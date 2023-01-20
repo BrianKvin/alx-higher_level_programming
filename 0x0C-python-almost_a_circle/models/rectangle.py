@@ -4,6 +4,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """class rectangle implements Base with the __init__() method"""
     def __init__(self, width, height, x=0, y=0, id=None):
         """class constructor Initialize a rectangle
         Private instance attributes:
@@ -58,7 +59,7 @@ class Rectangle(Base):
         if type(value) != int:
             raise TypeError('x must be an integer')
         if value <= 0:
-            raise ValueError('x must be > 0')
+            raise ValueError('x must be >= 0')
         self.__x = value
 
     @property
@@ -72,5 +73,5 @@ class Rectangle(Base):
         if type(value) != int:
             raise TypeError('y must be an integer')
         if value <= 0:
-            raise ValueError('y must be > 0')
+            raise ValueError('y must be >= 0')
         self.__y = value
