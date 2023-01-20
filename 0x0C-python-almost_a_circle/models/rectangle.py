@@ -11,7 +11,7 @@ class Rectangle(Base):
         __height -> height
         __x -> x
         __y -> y
-        class the super class with id (this will use the __init__ logic)
+        call the super class with id (this will use the __init__ logic)
         """
         super().__init__(id)
         self.width = width
@@ -64,7 +64,7 @@ class Rectangle(Base):
     @property
     def y(self):
         """Returns the value of y"""
-        self.__y
+       return self.__y
 
     @y.setter
     def y(self, value):
