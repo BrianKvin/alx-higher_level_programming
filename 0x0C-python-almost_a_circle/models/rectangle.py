@@ -7,6 +7,7 @@ class Rectangle(Base):
     """class rectangle implements Base with the __init__() method"""
     def __init__(self, width, height, x=0, y=0, id=None):
         """class constructor Initialize a rectangle
+        or a public method
         Private instance attributes:
         __width -> width
         __height -> height
