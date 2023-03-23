@@ -23,5 +23,5 @@ against the string specified by the 'argv[4]' argument."""
     for row in rows:
         print(row)
 
-cur.close()
-db.close()
+    cur.close()
+    db.close()
