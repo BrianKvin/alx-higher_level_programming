@@ -2,11 +2,10 @@
 """takes in arguments and displays all values in the states\
     table of hbtn_0e_0_usa where name matches the argument"""
 
+import MySQLdb
+import sys
+
 if __name__ == '__main__':
-
-    import MySQLdb
-    import sys
-
     db = MySQLdb.connect(
                         host='localhost',
                         port=3306,
@@ -23,3 +22,6 @@ against the string specified by the 'argv[4]' argument."""
     rows = cur.fetchall()
     for row in rows:
         print(row)
+
+cur.close()
+db.close()
