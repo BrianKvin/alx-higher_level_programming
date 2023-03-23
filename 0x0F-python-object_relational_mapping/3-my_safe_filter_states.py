@@ -4,12 +4,11 @@
         where name matches the argument
         and is safe from SQL injections
 """
+   
+import MySQLdb
+import sys
 
 if __name__ == '__main__':
-
-    import MySQLdb
-    import sys
-
     db = MySQLdb.connect(
                         host='localhost',
                         port=3306,
