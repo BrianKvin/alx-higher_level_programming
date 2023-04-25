@@ -5,7 +5,7 @@
  * the content of the file must be written in utf-8
  * if an error occurred during writing, print the error object
  * */
-const fs = required('fs');
+const fs = require('fs');
 const filepath = process.argv[2];
 const writeData = process.argv[3];
 
