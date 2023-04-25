@@ -6,7 +6,7 @@
  * if an error occurred during writing, print the error object
  * */
 const fs = require('fs');
-const filepath = process.argv[2];
+const filePath = process.argv[2];
 const writeData = process.argv[3];
 
 fs.writeFile(filePath, writeData, 'utf-8', (error) => {
